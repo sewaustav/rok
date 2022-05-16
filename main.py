@@ -6,6 +6,7 @@ from aiogram.dispatcher.filters import Command, Text
 from aiogram import Bot, Dispatcher, executor, types
 import psycopg2
 from config import *
+import time
 
 logging.basicConfig(level=logging.INFO)
 
@@ -74,8 +75,22 @@ async def c(message: types.Message):
         await bot.send_message(-703593824, f"{user_id}, {user_name}, {user_surname}, {username}")
         lib[str(user_id)] = []
 
-    if message.text == "Тренировка войск":
-        pass
+    if message.text == "Собрать войска с тренировок | Ресурсы":
+        last_time = 0
+        t = 86400
+        army = 0
+        resource = 0
+        if time.time() - last_time > t:
+            army += 50000
+            resource += 100000
+
+
+    if message.text == "Посмотреть статистику":
+
+        await message.answer(f"У вас: \n {army} войск \n {resource} ресуросов \n x киллпоинтов")
+
+
+
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)

@@ -36,7 +36,7 @@ connection.autocommit = True
 #
 # print("[INFO ] Table created successfully")
 #
-#
+
 # with connection.cursor() as cursor:
 #     cursor.execute(
 #         """CREATE TABLE data(
@@ -49,6 +49,7 @@ connection.autocommit = True
 #                 koord varchar(50),
 #                 resource serial,
 #                 army serial,
+#                 killpoints serial,
 #                 progress varchar(1000));"""
 #     )
 #

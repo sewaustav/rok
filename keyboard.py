@@ -21,9 +21,12 @@ civilizations = ReplyKeyboardMarkup(resize_keyboard=True).row(rus, rome, jap).ro
 
 
 atack = KeyboardButton("Атака на город")
-tren = KeyboardButton("Тренировка армии")
+progress = KeyboardButton("Посмотреть статистику")
+# tren = KeyboardButton("Тренировка армии")
 update = KeyboardButton("Улучшить город")
 teh = KeyboardButton("Изучить технологию")
+# farm = KeyboardButton("Фарм")
+update = KeyboardButton("Собрать войска с тренировок | Ресурсы")
 
-panel = ReplyKeyboardMarkup(resize_keyboard=True).row(atack, tren).row(update, teh)
+panel = ReplyKeyboardMarkup(resize_keyboard=True).row(atack, progress).row(update, teh).row(update)
 

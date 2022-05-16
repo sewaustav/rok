@@ -1,5 +1,5 @@
 TOKEN = "5394439879:AAHRyX4_u_8hyjkB_abOSi1aB-2Sox-zK0M"
-host = "5432"
+host = "ec2-3-229-11-55.compute-1.amazonaws.com"
 user = "zbnraudayiiabb"
 password = "0247f5ab28052e2aba50943d154b5e9b5dc251cdaff8026637f49c3ec3c21ae0"
 db_name = "dcq7uh6bolkdps"
